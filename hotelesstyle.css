@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(221, 189, 148, 0.61);
+}
+/* NAVBAR */
+.logo {
+width: 150px;
+margin-left: 2rem;
+}
+.barra-nav {
+  background-color: #323255;
+}
+.navbar .navbar-nav .barra-link:hover {
+  color: aliceblue;
+}
+@media only screen and (min-width: 960px) {
+  .navbar .navbar-nav .barra-link {
+    padding: 1.44em 0.7em;
+  }
+  .navbar {
+    padding: 1;
+  }
+  .navbar .navbar-brand {
+    padding: 1 0.7em;
+  }
+}
+.navbar .navbar-nav .barra-link {
+  position: relative;
+}
+.navbar .navbar-nav .barra-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: aliceblue;
+  color: transparent;
+  width: 0%;
+  content: '';
+  height: 3px;
+  transition: all 0.5s;
+}
+.navbar .navbar-nav .barra-link:hover::after {
+  width: 100%;
+}
+.barra-link {
+  text-decoration: none;
+  color: aliceblue;
+}
+/* link HOTELES */
+.navbar .navbar-nav .barra-link1:hover {
+color: aliceblue;
+}
+
+@media only screen and (min-width: 992px) {
+.navbar .navbar-nav .barra-link1{
+  padding: 1.44em 0.7em;
+}
+.navbar {
+  padding: 1;
+}
+.navbar .navbar-brand {
+  padding: 1 0.7em;
+}
+}
+.navbar .navbar-nav .barra-link1 {
+position: relative;
+}
+.navbar .navbar-nav .barra-link1::after {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+background-color: aliceblue;
+color: transparent;
+width: 0%;
+content: "";
+height: 3px;
+transition: all 0.4s;
+}
+.navbar .navbar-nav .barra-link1:link:after {
+width: 100%;
+}
+.barra-link1 {
+text-decoration: none;
+color: aliceblue;
+}
+
+
+/* seccion dropdown login */
+.login{
+  background-color:#323255;
+  border: solid aliceblue;
+  border-radius: 1rem;
+}
+.login-text {
+  color: aliceblue;
+}
+
+/* HEADER */
+.sub-header h1 {
+  color: aliceblue;
+  font-family: 'Bebas Neue', cursive;
+  size: 40px;
+  text-shadow: 0 0 20px rgb(0 0 0 / 80%);
+}
+.sub-header{
+  background-color:#323255 ;
+  padding: 3rem;
+  text-align: center;
+}
+/* seccion hoteles busqueda */
+.hoteles-nav {
+  background-color:#323255 ;
+  padding: 5rem;
+  text-align: center;
+}
+.todavia {
+color: aliceblue;
+}
+
+/* seccion carrousel hoteles cards */
+.hoteles{
+max-width: 950px;
+}
+.hoteles {
+  min-width: 300px;
+  text-align: center;
+  border-radius: 1rem;
+  background-color:white;
+  margin-right: 30px;
+}
+.hoteles img{
+min-width: 300px;
+min-height: 212px;
+}
+.hoteles h3{
+font-size: 20px;
+color:#323255;
+}
+
+/* seccion lugares proximos */
+ /* ESTILO */
+ .lugares{
+   max-width: 1000px;
+ }
+  .poster-h2 {
+    position: relative;
+    left: 20%;
+   bottom: 60%;
+  }
+  .poster-h2 h2{
+    color: aliceblue;
+    font-family: "Bebas Neue", cursive;
+    size: 15px;
+    text-shadow: 0 0 20px rgb(0 0 0 / 80%);
+  }
+  .poster-h2 p{
+    color: aliceblue;
+    size: 15px;
+    text-shadow: 0 0 20px rgb(0 0 0 / 80%);
+  }
+/* configuracion de la fila de 3 */
+  .poster-h3 {
+    position: relative;
+    left: 30%;
+   bottom: 50%;
+  }
+  .poster-h3 h2{
+    color: aliceblue;
+    font-family: "Bebas Neue", cursive;
+    size: 15px;
+    text-shadow: 0 0 20px rgb(0 0 0 / 80%);
+  }
+  .poster-h3 p{
+    color: aliceblue;
+    size: 15px;
+    text-shadow: 0 0 20px rgb(0 0 0 / 80%);
+  }
+
+  /* HOVER EFFECTS */
+  .poster-img {
+    min-width:240px;
+    filter: brightness(60%);
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+  .poster-h2 {
+    transition: 0.5s ease;
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .poster:hover .poster-img {
+    filter: brightness(50%);
+  }
+  .poster:hover .poster-h2 {
+    opacity: 1;
+    filter: brightness(150%);
+  }
+  .poster-h3 {
+    transition: 0.5s ease;
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .poster:hover .poster-h3 {
+    opacity: 1;
+    filter: brightness(150%);
+  }
+
+/* seccion footer */
+/* footer-social */
+.footer-social {
+  text-align: center;
+  font-size: 35px;
+  background: rgb(34,34,80);
+  background: linear-gradient(180deg, #323255 87%, rgba(228,187,133,1) 100%);
+}
+.footer-social a:hover {
+  filter: brightness(80%);
+}
+/* foooter-legal */
+.footer-legal {
+  background: rgb(34,34,80);
+  background: linear-gradient(180deg, rgba(34,34,80,1) 16%, rgba(0,0,0,1) 100%);
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+.footer-legal a {
+  text-decoration: none;
+}
+.coockies-a {
+  color: rgb(228, 187, 133);
+}
+.coockies-a:hover {
+  color: #ffffff;
+}
+/* footer-all */
+.footer-all{
+  background: rgb(228,187,133);
+  background: linear-gradient(180deg, rgba(228,187,133,1) 10%, rgba(255,255,255,0) 48%, rgba(228,187,133,1) 90%);
+}
+/* DIV-1 */
+
+.input-foot {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid  2px #222250;
+}
+.button-foot {
+  background-color: transparent;
+  border: solid 2px #222250;
+  transition: 0.4s;
+}
+.button-foot:hover {
+  color: antiquewhite;
+  background-color: #222250;
+}
+
+/* DIV-2 /LOGO IMAGEN */
+
+/* DIV-3 */
+.icon-foot {
+  text-align: center;
+  font-size: 30px;
+  color: #222250;
+ padding: 0 2rem;
+}

@@ -48,7 +48,8 @@
                     </li>
                 </ul>
                 <div>
-                    <button class="btn btn-secondary" type="button">
+                    <button class="btn btn-secondary" type="button" data-bs-toggle="modal"
+                        data-bs-target="#iniciasesion">
                         <i class="fas fa-user"></i> Log In
                     </button>
                 </div>
@@ -114,6 +115,27 @@
     </header>
 
     <main>
+        <!-- Modal de LOGIN -->
+        <div class="modal fade" id="iniciasesion" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalToggleLabel">Bienvenido! Comienza a Viajar</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-grid gap-3 col-10 mx-auto">
+                            <button class="btn btn-primary" type="button"><a class="m-1 text-white" href="" target="_blank"><i class="fab fa-facebook-square"></i></a>Ingresa con Facebook</button>
+                            <button class="btn btn-danger" type="button"><a class="m-1 text-white" href="" target="_blank"><i class="fab fa-google"></i></a>Ingresa con Google</button>
+                            <button class="btn btn-light" type="button"><a class="m-1" href="" target="_blank"><i class="fas fa-envelope"></i></a>Ingresa con E-Mail</button>
+                            <button class="btn btn-secondary" data-bs-target="#registrate" data-bs-toggle="modal"
+                                data-bs-dismiss="modal">Registrate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- SECCION CARDS IMAGENES -->
         <section class="container">
             <div>
@@ -243,8 +265,8 @@
             </div>
             <!-- CARDS OFERTAS -->
             <div class="row row-cols-1 row-cols-md-2">
-                <div class="col pe-2 pb-3 poster">          
-                        <img class="poster-img w-100 h-100" src="imagenes/hotel 1.jpg" alt="">
+                <div class="col pe-2 pb-3 poster">
+                    <img class="poster-img w-100 h-100" src="imagenes/hotel 1.jpg" alt="">
                     <div class="poster-h2">
                         <h2>Mexico</h2>
                         <p>1500 Alojamientos</p>

@@ -90,7 +90,6 @@ text-decoration: none;
 color: aliceblue;
 }
 
-
 /* seccion dropdown login */
 .login{
   background-color:#323255;
@@ -99,6 +98,10 @@ color: aliceblue;
 }
 .login-text {
   color: aliceblue;
+}
+/* seccion modal login */
+.google-boton{
+  border: solid gray;
 }
 
 /* HEADER */

@@ -12,10 +12,10 @@
 
     <!-- link css proyecto -->
 
-
     <link rel="stylesheet" href="hotelesstyle.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     <!-- CDN iconos-font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -27,8 +27,8 @@
     <!-- SECCION NAVBAR -->
     <section class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light container-fluid barra-nav">
-            <div class="me-5">
-                <a href=""><img class="logo" src="imagenes/OPCION MAS NEGRITA.png" alt="logo"></a>
+            <div class="me-5 ">
+                <a href=""><img class="logo" src="./IMGProyecto/Logo/LOGO-NAVBAR.png" alt="logo"></a>
             </div>
             <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -38,18 +38,28 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 ml-auto mb-lg-0">
                     <li class="nav-item  my-2 me-2 mx-lg-3">
-                        <a class="barra-link" href="#"> <b>Blog</b> </a>
+                        <a class="barra-link" href="#">
+                            <i class="fas fa-blog"></i>
+                            <b>Blog</b> </a>
                     </li>
                     <li class="nav-item my-2 me-2 mx-lg-3">
-                        <a class="barra-link" href="./promociones.html"> <b>Promociones</b> </a>
+                        <a class="barra-link" href="./promociones.html">
+                            <i class="fas fa-suitcase-rolling"></i>
+                            <b>Promociones</b> </a>
                     </li>
                     <li class="nav-item my-2 me-2 mx-lg-3">
-                        <a class=" barra-link1" href="./hoteles.html"> <b>Hoteles</b></a>
+                        <a class=" barra-link1" href="./hoteles.html">
+                            <i class="fas fa-hotel"></i>
+                            <b>Hoteles</b></a>
+                    </li>
+                    <li class="nav-item my-2 me-2 mx-lg-3">
+                        <a class=" barra-link" href="./vuelos.html">
+                            <i class="fas fa-plane"></i>
+                            <b>Vuelos</b></a>
                     </li>
                 </ul>
                 <div>
-                    <button class="btn btn-secondary" type="button" data-bs-toggle="modal"
-                        data-bs-target="#iniciasesion">
+                    <button class="btn btn-secondary" type="button" style="color: rgb(228, 173, 101);">
                         <i class="fas fa-user"></i> Log In
                     </button>
                 </div>
@@ -115,27 +125,6 @@
     </header>
 
     <main>
-        <!-- Modal de LOGIN -->
-        <div class="modal fade" id="iniciasesion" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalToggleLabel">Bienvenido! Comienza a Viajar</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="d-grid gap-3 col-10 mx-auto">
-                            <button class="btn btn-primary" type="button"><a class="m-1 text-white" href="" target="_blank"><i class="fab fa-facebook-square"></i></a>Ingresa con Facebook</button>
-                            <button class="btn btn-danger" type="button"><a class="m-1 text-white" href="" target="_blank"><i class="fab fa-google"></i></a>Ingresa con Google</button>
-                            <button class="btn google-boton" type="button"><a class="m-1" href="" target="_blank"><i class="fas fa-envelope"></i></a>Ingresa con E-Mail</button>
-                            <button class="btn btn-secondary" data-bs-target="#registrate" data-bs-toggle="modal"
-                                data-bs-dismiss="modal">Registrate</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- SECCION CARDS IMAGENES -->
         <section class="container">
             <div>
@@ -309,19 +298,109 @@
 
     <!-- FOOTER -->
 
-    <footer class="container-fluid p-0 m-0 row">
+    <footer class="container-fluid p-0 m-0 row justify-content-center">
         <!-- FOOTER-SOCIAL -->
-        <div class="footer-social py-2 ">
-            <a class="m-1 text-white" href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            <a class="m-1 text-white" href="" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a class="m-1 text-white" href="" target="_blank"><i class="fab fa-youtube"></i></a>
+        <div class="explainer-footer row justify-content-between row-cols-md-4 row-cols-1 pt-2 pb-2 px-0 m-0">
+            <div class=" d-flex flex-column flex-grow-1 align-items-center text-center pt-5 pt-md-3  p-1">
+                <img src="imagenes/busca (1).avif" alt="">
+                <h2>El mejor buscador de vuelos</h2>
+                <p>Cuando buscás en Travel Life nosotros nos encargamos del trabajo pesado. Comparamos rápidamente miles
+                    de vuelos de todas las agencias de viajes y te mostramos el más barato y conveniente. Así de simple.
+                </p>
+            </div>
+            <div class=" d-flex flex-column flex-grow-1 align-items-center text-center pt-3 p-1">
+                <img src="imagenes/llega.avif" alt="">
+                <h2>¡Llegá primero a las ofertas!</h2>
+                <p>Somos expertos en encontrar vuelos en oferta.
+                    Cuando creemos que pueden interesarte, te avisamos inmediatamente para que puedas aprovecharlas. Ah,
+                    ¿sabías que registrarse es gratís y no lleva más que un click?
+                </p>
+            </div>
+            <div class=" d-flex flex-column flex-grow-1 align-items-center text-center pt-3 p-1">
+                <img src="imagenes/ahorra.avif" alt="">
+                <h2>Ahorrá tiempo y dinero.</h2>
+                <p>Si un vuelo te interesa, nosotros nos ocupamos. Creá gratís una alerta de precio y enterate primero
+                    si baja de precio. Viajar se trata de disfrutar, por eso no queremos hacerte perder tiempo.
+                </p>
+            </div>
+            <div class=" d-flex flex-column flex-grow-1 align-items-center text-center pt-3 p-1">
+                <img src="imagenes/seguinos.avif" alt="">
+                <h2>Seguinos</h2>
+                <p>¡Seguinos en Facebook, Twitter o Youtube para enterarte novedades, ofertas de vuelos y tips de
+                    viajes!
+                </p>
+                <div class="icons-foot d-flex pb-3 ">
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <!-- ACOORDION FOOTER -->
+        <div style="background-color: #dae1f0;" class="d-flex justify-content-center pb-5">
+            <div class="accordion h-75 w-75 m-0 px-0 my-auto rounded-3" id="accordionExample">
+                <div class="accordion-item">
+                    <h5 class="accordion-header px-3 py-3" style="color: #222250;">
+                        Preguntas Frecuentes
+                    </h5>
+                </div>
+                <div class="accordion-item">
+                    <h5 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Como conseguir vuelos baratos en Travel Life?
+                        </button>
+                    </h5>
+                    <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body" style="color:  rgb(56, 46, 32); font-size: 13px">
+                            Para conseguir vuelos baratos en Travel Life, lo primero que tenés que hacer es registrarte
+                            desde el sitio con tu email o descargarte nuestra App para que te lleguen todas las alertas
+                            de vuelos baratos que mandamos. Además, también podés crearte alertas personalizadas que te
+                            avisen cuando el vuelo que querés comprar baja de precio.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Cuando hay promociones en Travel Life?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body" style="color: rgb(56, 46, 32); font-size: 13px;">
+                            Las promociones aéreas dependen de las agencias y aerolíneas. En Travel Life estamos
+                            constantemente detectando las mejores promociones aéreas y enviándoselas a nuestros usuarios
+                            para que puedan aprovecharlas.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Como enterarse de las promociones?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body" style="color:rgb(56, 46, 32); font-size: 13px;">
+                            Para enterarte de las mejores promociones, te sugerimos registrarte desde el sitio o
+                            descargarte la App para recibir las alertas de vuelos baratos que enviamos.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- FOOTER-ALL -->
-        <div class="footer-all row row-cols-lg-3 row-cols-1 py-5 m-0">
+        <div class="footer-all row row-cols-lg-3 row-cols-1 py-3 m-0">
             <div class="d-flex flex-column justify-content-lg-center justify-content-start me-lg-0">
                 <h3 style="text-align: center; color:#222250 ;">¿Queres estar al dia con las noticias y tendencias de
                     viajes?</h3>
-                <form class="d-flex flex-column pe-5 pe-lg-0">
+                <form class="d-flex flex-column pe-5 pe-lg-0 ">
                     <input class="m-2 input-foot" type="text" placeholder="Nombre" aria-label="Nombre" name="name">
                     <input class="m-2 input-foot " type="text " placeholder="Correo elecrtónico"
                         aria-label="Correo electrónico" name="email">
@@ -333,26 +412,27 @@
             <div class="d-flex justify-content-center align-items-center ">
                 <img src="imagenes/LOGUITO 3 SIN FONDO.png" alt="">
             </div>
-            <div class="row my-3">
-                <div class="justify-content-center align-items-center col-lg-12 col-sm-7 col-12 ms-4 ms-sm-0 p-0 row">
+            <div class="row my-3 p-0">
+                <div
+                    class=" justify-content-center align-items-center col-lg-12 col-md-4 col-12 ms-4 ms-md-0  p-0 row ">
                     <div class="col-2 icon-foot"><i class="fas fa-comment "></i></div>
                     <p class="col-9"> <i style="font-size: 20px;"> hello@tlturusmo.com</i>
                         <br>
-                        <span>+5493816807711</span>
+                        <span>+5494816807711</span>
                     </p>
                 </div>
-                <div class="justify-content-center align-items-center  col-lg-12 col-sm-7 col-12 ms-4 ms-sm-0 p-0 row">
+                <div class="justify-content-center align-items-center  col-lg-12 col-md-4 col-12 ms-4 ms-md-0  p-0 row">
                     <div class="col-2 icon-foot"><i class="fas fa-map-marker-alt"></i></div>
                     <p class="col-9"> <i style="font-size: 20px;"> Tucuman, Argentina</i>
                         <br>
                         <span>Lamadrid 695 2° A</span>
                     </p>
                 </div>
-                <div class="justify-content-center align-items-center col-lg-12 col-sm-7 col-12 ms-4 ms-sm-0 p-0 row">
+                <div class="justify-content-center align-items-center  col-lg-12 col-md-4 col-12 ms-4 ms-md-0 p-0 row">
                     <div class="col-2 icon-foot"><i class="fas fa-map-marker-alt"></i></div>
                     <p class="col-9"> <i style="font-size: 20px;"> Madrid, España</i>
                         <br>
-                        <span>Calle Puenteareas 17</span>
+                        <span>Pasaje las Praderas 22</span>
                     </p>
                 </div>
             </div>
@@ -360,7 +440,8 @@
 
         <!-- FOOTER-LEGAL -->
         <div class="footer-legal py-2">
-            <a class="text-white" href="" target="_blank">Politica de privacidad</a> |
+            <a class="text-white" href="" target="_blank">Politica de privacidad</a>
+            |
             <a class="coockies-a " href="" target="_blank">Politica de cookies</a>
         </div>
 

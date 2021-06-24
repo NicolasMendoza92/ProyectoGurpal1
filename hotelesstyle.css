@@ -3,19 +3,22 @@
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgba(221, 189, 148, 0.61);
+  background-color: whitesmoke;
 }
+
 /* NAVBAR */
 .logo {
-width: 150px;
-margin-left: 2rem;
+  width: 150px;
+  margin-left: 2rem;
 }
+
 .barra-nav {
-  background-color: #323255;
+  background-color: #222250;
 }
 .navbar .navbar-nav .barra-link:hover {
   color: aliceblue;
 }
+
 @media only screen and (min-width: 960px) {
   .navbar .navbar-nav .barra-link {
     padding: 1.44em 0.7em;
@@ -39,69 +42,61 @@ margin-left: 2rem;
   background-color: aliceblue;
   color: transparent;
   width: 0%;
-  content: '';
+  content: "";
   height: 3px;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
-.navbar .navbar-nav .barra-link:hover::after {
+.navbar .navbar-nav .barra-link:hover:after {
   width: 100%;
 }
 .barra-link {
   text-decoration: none;
   color: aliceblue;
 }
+
 /* link HOTELES */
 .navbar .navbar-nav .barra-link1:hover {
-color: aliceblue;
+  color: aliceblue;
 }
 
 @media only screen and (min-width: 992px) {
-.navbar .navbar-nav .barra-link1{
-  padding: 1.44em 0.7em;
-}
-.navbar {
-  padding: 1;
-}
-.navbar .navbar-brand {
-  padding: 1 0.7em;
-}
+  .navbar .navbar-nav .barra-link1 {
+    padding: 1.44em 0.7em;
+  }
+  .navbar {
+    padding: 1;
+  }
+  .navbar .navbar-brand {
+    padding: 1 0.7em;
+  }
 }
 .navbar .navbar-nav .barra-link1 {
-position: relative;
+  position: relative;
 }
 .navbar .navbar-nav .barra-link1::after {
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
-background-color: aliceblue;
-color: transparent;
-width: 0%;
-content: "";
-height: 3px;
-transition: all 0.4s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: aliceblue;
+  color: transparent;
+  width: 0%;
+  content: "";
+  height: 3px;
+  transition: all 0.4s;
 }
 .navbar .navbar-nav .barra-link1:link:after {
-width: 100%;
+  width: 100%;
 }
 .barra-link1 {
-text-decoration: none;
-color: aliceblue;
+  text-decoration: none;
+  color: aliceblue;
 }
 
 /* seccion dropdown login */
-.login{
-  background-color:#323255;
-  border: solid aliceblue;
-  border-radius: 1rem;
-}
 .login-text {
-  color: aliceblue;
-}
-/* seccion modal login */
-.google-boton{
-  border: solid gray;
+  color: #222250;
 }
 
 /* HEADER */
@@ -112,13 +107,13 @@ color: aliceblue;
   text-shadow: 0 0 20px rgb(0 0 0 / 80%);
 }
 .sub-header{
-  background-color:#323255 ;
+  background-color:#222250 ;
   padding: 3rem;
   text-align: center;
 }
 /* seccion hoteles busqueda */
 .hoteles-nav {
-  background-color:#323255 ;
+  background-color:#222250 ;
   padding: 5rem;
   text-align: center;
 }
@@ -143,7 +138,7 @@ min-height: 212px;
 }
 .hoteles h3{
 font-size: 20px;
-color:#323255;
+color:#222250;
 }
 
 /* seccion lugares proximos */
@@ -185,12 +180,15 @@ color:#323255;
     text-shadow: 0 0 20px rgb(0 0 0 / 80%);
   }
 
-  /* HOVER EFFECTS */
+  /* HOVER EFFECTS de seccion hoteles */
   .poster-img {
     min-width:240px;
     filter: brightness(60%);
     transition: 0.5s ease;
     backface-visibility: hidden;
+  }
+  .poster :hover {
+    cursor: pointer;
   }
   .poster-h2 {
     transition: 0.5s ease;
@@ -218,16 +216,40 @@ color:#323255;
     filter: brightness(150%);
   }
 
-/* seccion footer */
-/* footer-social */
-.footer-social {
-  text-align: center;
-  font-size: 35px;
+  /* FOOTER */
+/* explainer-footer */
+.explainer-footer {
   background: rgb(34,34,80);
-  background: linear-gradient(180deg, #323255 87%, rgba(228,187,133,1) 100%);
+  background: linear-gradient(180deg, rgba(34,34,80,1) 4%, rgba(255,255,255,1) 4%, rgba(255,255,255,1) 96%);
 }
-.footer-social a:hover {
-  filter: brightness(80%);
+
+.explainer-footer img {
+  
+  height: 70px;
+  vertical-align: middle;
+  border: 0em;
+
+}
+.explainer-footer h2 {
+  margin: 0em;
+  font-weight: 600;
+  padding: 5px 0;
+  color: #222250;
+  font-size: 15px;
+}
+.explainer-footer p {
+  color: rgb(56, 46, 32);
+  line-height: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+.icons-foot a i{
+  font-size: 35px;
+  margin: 5px 6px;
+  padding: 5px;
+  color: #222250;
+  
 }
 /* foooter-legal */
 .footer-legal {
@@ -248,19 +270,29 @@ color:#323255;
 }
 /* footer-all */
 .footer-all{
-  background: rgb(228,187,133);
-  background: linear-gradient(180deg, rgba(228,187,133,1) 10%, rgba(255,255,255,0) 48%, rgba(228,187,133,1) 90%);
-}
-/* DIV-1 */
+  background-color: #ffffff;
 
+}
+/* FORM-FOOT */
 .input-foot {
   background-color: transparent;
   border: none;
   border-bottom: solid  2px #222250;
 }
+
+.input-foot:hover{
+  transform: scale(105%);
+}
+.input-foot:active {
+ outline: none;
+}
+.input-foot:focus{
+  outline: none;
+}
 .button-foot {
   background-color: transparent;
   border: solid 2px #222250;
+  border-radius: 1rem;
   transition: 0.4s;
 }
 .button-foot:hover {
@@ -268,12 +300,10 @@ color:#323255;
   background-color: #222250;
 }
 
-/* DIV-2 /LOGO IMAGEN */
-
-/* DIV-3 */
+/* CONTACTO-FOOT */
 .icon-foot {
-  text-align: center;
+  text-align: end;
   font-size: 30px;
   color: #222250;
- padding: 0 2rem;
+  padding: 0 2rem;
 }

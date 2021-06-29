@@ -63,7 +63,8 @@
                     </li>
                 </ul>
                 <div>
-                    <button class="btn btn-secondary" type="button" style="color: rgb(228, 173, 101);">
+                    <button class="btn btn-secondary" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModalToggle">
                         <i class="fas fa-user"></i> Log In
                     </button>
                 </div>
@@ -129,6 +130,75 @@
     </header>
 
     <main>
+ <!-- Modal de LOGIN -->
+
+ <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+     tabindex="-1">
+     <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalToggleLabel"><b>Bienvenido! Comienza a Viajar</b></h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 <div class="d-grid gap-3 col-10 mx-auto">
+                     <button class="btn btn-primary" type="button"><a class="m-1 text-white" href="https://es-es.facebook.com/"
+                             target="_blank"><i class="fab fa-facebook-square"></i></a>Ingresa con
+                         Facebook</button>
+                     <button class="btn btn-danger" type="button"><a class="m-1 text-white" href="https://accounts.google.com/"
+                             target="_blank"><i class="fab fa-google"></i></a>Ingresa con Google</button>
+                     <button class="btn btn-secondary" data-bs-toggle="modal"
+                         data-bs-target="#exampleModalToggle2" data-bs-dismiss="modal">Registrate</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!-- Modal Registrate -->
+ <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+     tabindex="-1">
+     <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalToggleLabel2"><b>!No falta nada! Completa tus datos</b></h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 <div class="mb-3">
+                     <label for="formGroupExampleInput" class="form-label">Nombre y Apellido</label>
+                     <input type="text" class="form-control" id="formGroupExampleInput"
+                         placeholder="">
+                 </div>
+                 <div class="mb-3">
+                     <label for="formGroupExampleInput" class="form-label">Correo Electrónico</label>
+                     <input type="email" class="form-control" id="formGroupExampleInput"
+                         placeholder="">
+                 </div>
+                 <div class="mb-3">
+                     <label for="formGroupExampleInput" class="form-label">Elige tu contraseña</label>
+                     <input type="password" class="form-control" id="formGroupExampleInput"
+                         placeholder="">
+                 </div>
+                 <div class="mb-3">
+                     <label for="formGroupExampleInput" class="form-label">Confirma tu contraseña</label>
+                     <input type="password" class="form-control" id="formGroupExampleInput"
+                         placeholder="">
+                 </div>
+                 <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                     <label class="form-check-label" for="flexCheckChecked">
+                         Quiero recibir ofertas y promociones a mi correo
+                     </label>
+                 </div>
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn-primary" data-bs-dismiss="modal" aria-label="Close">A
+                     VIAJAR!</button>
+             </div>
+         </div>
+     </div>
+ </div>
+
         <!-- SECCION CARDS IMAGENES -->
         <section class="container">
             <!-- break Hoteles -->

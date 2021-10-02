@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+
+.footer{
+    overflow: hidden;
+    background-color: #171a21;
+}
+.footer .iconoFooter a {
+    width: 44px;
+    height: 44px;
+    line-height: 43px;
+    background: transparent;
+    border: 1px solid #e2e2eb;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.iconoFooter a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 45px;
+    color: #858da8;
+    display: inline-block;
+    background: #ebeef5;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.footer .iconoFooter a:hover {
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(2, 9, 11, 1) 0%,
+        rgba(22, 86, 110, 1) 50%,
+        rgba(2, 9, 11, 1) 100%,
+        rgba(0, 0, 0, 1) 100%
+    );
+    border-color: rgb(47, 157, 194);
+    color: white;
+}
+
+.footer .iconoFooter a+a {
+    margin-left: 4px;
+}
+
+.footer .tituloFooter {
+    color: rgba(22, 86, 110, 1);
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.footer .tituloFooter1 {
+    color: rgba(22, 86, 110, 1);
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.footer .lista li a:hover {
+    color: rgba(22, 86, 110, 1);
+}
+
+.footer .lista li {
+    margin-bottom: 11px;
+    cursor: pointer;
+}
+
+.footer .lista li a {
+    color: grey;
+    text-decoration: none;
+}
+
+.bg {
+    background-color: #0a0c0f;
+}
+.volverArriba {
+    font-size: 2.5rem;
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.volverArriba:link,
+.volverArriba:visited,
+.volverArriba:active {
+    color: white;
+}
+.volverArriba:hover {
+    color: rgb(16, 69, 90);
+}

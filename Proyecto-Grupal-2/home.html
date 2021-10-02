@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Home Page</title>
+    <!-- CDN font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <!-- Favicon-->
+    <link rel="icon" href="/img/logo war games.png" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <!-- <link href="css/styles." rel="stylesheet" /> -->
+    <!-- link index.css -->
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-home sticky-top">
+        <div class="container px-4 px-lg-5">
+            <div class="d-flex align-items-center ">
+                <img src="./img/wargameslogo.png" width="40px" alt="logo">
+                <a class="navbar-brand ms-3" href="#!">War Games</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+
+                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    <li class="nav-item"><a id="log-out" class="nav-link" href="#!">Log out</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#destacados">Destacados</a></li>
+                            <li><a class="dropdown-item" href="#ofertas">Ofertas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn-buy" type="submit">
+                        <i class="bi-cart-fill me-1"></i>
+                        Cart
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class=" header-games py-3">
+        <div class=" px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <img class="efecto-logo" src="./img/wargameslogo.png" width="100px" alt="logo">
+                <h1 class="display-4 fw-bolder">
+                    <span class="efecto-letras efecto-w">W</span>
+                    <span class="efecto-letras efecto-a">A</span>
+                    <span class="efecto-letras efecto-r">R</span>
+                    <span class="efecto-games">GAMES</span>
+                </h1>
+                <p class="lead  text-white-50 mb-0"></p>
+            </div>
+        </div>
+    </header>
+    <!-- Banner Section -->
+    <!-- <header>
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade h-50" data-bs-ride="carousel">
+            <ol class="carousel-indicators carousel-indicators-header">
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="carousel-header-img" src="https://res.cloudinary.com/dcx1rcwvu/image/upload/v1629241912/Video%20Games/header/gamerheader_q2zhlx.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption-header carousel-caption d-none d-md-block">
+                        <h3>BLA BLA BLA BLA BLA</h3>
+                        <p></p>
+                        <a href="#" class="btn btn-warning">Read More</a>
+                    </div>
+                </div>
+               
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </header> -->
+    <!-- End Banner Section -->
+    <!-- carousel header  -->
+
+
+    <!--  -->
+    <!-- Section productos-->
+    <main class="container">
+        <!-- Section Carousel Destacados y Recomendados -->
+        <section>
+            <div class="py-5" id="destacados">
+                <h4>Destacados y Recomendados</h4>
+                <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div id="button-carousel" class="carousel-indicators carousel-indicators-game">
+                        <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button> -->
+                        <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button> -->
+
+                    </div>
+                    <div id="games-carousel" class="carousel-inner">
+                        <!-- CONTENIDO CAROUSEL -->
+                        <!-- <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div id="main-image-${game.id}" class="col-12 col-md-8 game-image"
+                                    data-default-image="${game.url}">
+                                    <button class="btn-buy"><b>BUY NOW</b></button>
+                                </div>
+                                <div class="d-md-flex col-10 col-md-3 game-description row">
+                                    <div class="mt-2 col-12">
+                                        <h1>${game.titulo}</h1>
+                                    </div>
+                                    <div class="d-none col-5 d-md-flex col-md-12 flex-md-column">
+                                        <img id="image-1-${game.id}" src="${game.src1}" alt="img1">
+                                        <img id="image-2-${game.id}" src="${game.src2}" alt="img2">
+                                    </div>
+                                    <div class="d-none d-md-flex">
+                                        <h4>Ya disponible</h4>
+                                    </div>
+                                    <div class="flex-wrap d-md-flex mt-1">
+                                        <span>${game.categoria1}</span>
+                                        <span>${game.categoria2}</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p><i>ARS$ ${game.precio}</i></p>
+                                        <h5><i class="fab fa-apple me-2"></i><i class="fab fa-windows"></i></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!--  -->
+                    </div>
+                    <button class="carousel-control-prev btn-carousel-prev" type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon  btn-carousel-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next btn-carousel-next" type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon  btn-carousel-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- section carusel PRUEBA 2 -->
+
+
+        <!-- Section Cards Ofertas Especiales -->
+        <section class="mt-5" id="ofertas">
+            <h4>Ofertas Especiales</h4>
+            <!-- Cards de Productos -->
+            <div id="contenedor-cards">
+                <!-- <div class="d-flex justify-content-end align-items-center d-lg-none"><span class="me-1">Ver más</span><i class="fas fa-arrow-right"></i></div>
+                <div id="games-cards" class="mb-5 d-flex justify-content-start justify-content-xl-center overflow-auto"> -->
+                <!-- <div class="card-game">
+                        <div>
+                            <img src="https://res.cloudinary.com/dcx1rcwvu/image/upload/v1628380011/Video%20Games/spotlight_image_english_kivm2z.jpg"
+                                class="card-img-top" alt="game-img">
+                            
+                        </div>
+                        <div class="card-description">
+                            <div class="d-flex flex-column justify-content-center align-items-start mx-2 py-2 ">
+                                <h3>Oferta del mes</h3>
+                                <div class="d-flex justify-content-between alingn-items-center">
+                                    <h5>¡ Fecha limite ${game.fechaLimite}!</h5>
+                                    <button class="btn-buy">Buy now</button>
+                                    </div>     
+                            </div>
+                            <div class="m-0 row  ">
+                                <div class="col-3 card-oferta d-flex justify-content-center align-items-center">
+                                    <span>-50%</span>
+                                </div>
+                                <div class="col-9 card-precio">
+                                    <span><s>ARS$ 1500.00</s></span>
+                                    <span><i>ARS$ 750.00</i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Formulario para pedir datos -->
+    <!-- Footer-->
+    <footer class="container-fluid footer p-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12 d-flex justify-content-center justify-content-lg-start ">
+                    <div>
+                        <div class="iconoFooter">
+                            <h2 class="tituloFooter">¡Siguenos!</h2>
+                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-discord "></a>
+                            <a href="#" class="fab fa-twitter "></a>
+                        </div>
+                        <p class="text-secondary text-center py-4">Tu compra está protegida</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="d-flex justify-content-around ">
+                        <ul class="py-2 list-unstyled lista ">
+                            <h3 class="tituloFooter1 ">Comprar</h3>
+                            <li><a>Como Comprar</a></li>
+                            <li><a>Lista de juegos</a></li>
+                            <li><a>Colecciones</a></li>
+                        </ul>
+                        <ul class="py-2 list-unstyled lista ">
+                            <h3 class="tituloFooter1 ">Ayuda</h3>
+                            <li><a>FAQ</a></li>
+                            <li><a>Como Activar el Juego</a></li>
+                            <li><a>Crear un ticket</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="d-flex justify-content-center align-items-center bg">
+            <div class="col-10 text-center p-3 text-secondary">
+                © 2021 Copyright
+            </div>
+            <a href="#" class="volverArriba mt-2"><i class="fas fa-chevron-circle-up"></i></a>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/home.js"></script>
+</body>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Iniciar sesión</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="log-in-form" action="" onsubmit="logIn(event)">
+                <div class="modal-body">
+                    <div id="msj-error-login" class="alert alert-danger d-none" role="alert">
+                        A simple danger alert—check it out!
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input id="email" type="email" class="form-control" id="floatingInput"
+                            placeholder="name@example.com" required>
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                        <input id="password" type="password" class="form-control" id="floatingPassword"
+                            placeholder="Password" required>
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" name="Iniciar Sesion" value="iniciar sesion" id="">
+                    <!-- <button type="submit" class="bg-dark text-white" data-bs-dismiss="modal">Iniciar sesión</button> -->
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</html>
